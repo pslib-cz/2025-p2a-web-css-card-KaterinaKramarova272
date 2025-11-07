@@ -1,0 +1,34 @@
+@layer reset, base, components;
+
+@import url('normalize.css') layer(reset);
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap') layer(base);
+
+@layer reset {
+    :root {
+        --primary: #07755D;
+        --secondary: #59bc1c;
+        --denied: #ff8686;
+        --text: #515959;
+        --border: #59de0c;
+    }
+    .main {
+        display: flow-root;
+    }
+}
+
+@layer base {
+    html {
+        font-family: 'Inter', sans-serif;
+        color: var(--text);
+    }
+    .card {
+        max-width: 21em;
+        margin: 1rem; /* without scaling */
+        padding: 1em;
+    }
+}
+
+@layer components {
+    /* todo components */
+ 
+}
