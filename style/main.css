@@ -1,34 +1,96 @@
 @layer reset, base, components;
 
-@import url('normalize.css') layer(reset);
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap') layer(base);
+@import url("normalize.css") layer(reset);
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap")
+layer(base);
 
 @layer reset {
-    :root {
-        --primary: #07755D;
-        --secondary: #59bc1c;
-        --denied: #ff8686;
-        --text: #515959;
-        --border: #59de0c;
-    }
-    .main {
-        display: flow-root;
-    }
+  :root {
+    --primary: #07755d;
+    --secondary: #59bc1c;
+    --denied: #ff8686;
+    --text: #515959;
+    --border: lightgray;
+    --gold-primary: #f59e0b;
+    --gold-secondary: #fef1be;
+    --text-gold: #92400e;
+  }
+  .main {
+    display: flow-root;
+  }
 }
 
 @layer base {
-    html {
-        font-family: 'Inter', sans-serif;
-        color: var(--text);
+  html {
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+  }
+  .card {
+    max-width: 21em;
+    margin: 1rem; /* without scaling */
+    padding: 1em;
+    border: 1px solid var(--border);
+    border-radius: 0.5em;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0.25em;
+    color: var(--secondary);
+  }
+  b {
+    color: var(--primary);
+  }
+  .number {
+    font-weight: 700;
+    font-size: 2em;
+    color: var(--primary);
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25em;
+    text-align: center;
+    font-weight: 600;
+  }
+  .button:hover {
+    background-color: var(--secondary);
+  }
+  .link {
+    color: var(--primary);
+    font-weight: 600;
+  }
+  .features li {
+    margin-bottom: 0.5em;
+    padding-left:0.5em;
+  }
+  .check {
+    list-style-image: url("/images/check.svg");
+  }
+  .cross {
+    list-style-image: url("/images/cross.svg");
+  }
+    .card--gold {
+        background-color: var(--gold-secondary);
+        border-color: var(--gold-primary);
+        border-width: 3px;
+        justify-items: center;
     }
-    .card {
-        max-width: 21em;
-        margin: 1rem; /* without scaling */
-        padding: 1em;
+    .ad-gold {
+        background-color: var(--gold-primary);
+        color: white;
+        padding: 1em 2em;
+        border-radius: 20px;
+        display: inline-block;
+        font-size: small;
     }
 }
 
 @layer components {
-    /* todo components */
- 
+  /* todo components */
 }
