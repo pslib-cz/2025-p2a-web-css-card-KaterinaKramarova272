@@ -32,6 +32,19 @@ layer(base);
     border: 1px solid var(--border);
     border-radius: 0.5em;
   }
+}
+
+@layer components {
+  body {
+    background-color: #675db9;
+  }
+  .cards {
+    display: flex;
+    
+  }
+  .card--marketer {
+    background-color: white;
+  }
   .title {
     font-weight: 700;
     font-size: 2.5em;
@@ -67,7 +80,7 @@ layer(base);
   }
   .features li {
     margin-bottom: 0.5em;
-    padding-left:0.5em;
+    padding-left: 0.5em;
   }
   .check {
     list-style-image: url("/images/check.svg");
@@ -75,22 +88,70 @@ layer(base);
   .cross {
     list-style-image: url("/images/cross.svg");
   }
-    .card--gold {
-        background-color: var(--gold-secondary);
-        border-color: var(--gold-primary);
-        border-width: 3px;
-        justify-items: center;
-    }
-    .ad-gold {
-        background-color: var(--gold-primary);
-        color: white;
-        padding: 1em 2em;
-        border-radius: 20px;
-        display: inline-block;
-        font-size: small;
-    }
-}
+  .card--gold {
+    background-color: var(--gold-secondary);
+    border-color: var(--gold-primary);
+    border-width: 3px;
+    justify-items: center;
+  }
+  .ad-gold {
+    background-color: var(--gold-primary);
+    color: white;
+    padding: 1em 2em;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: small;
+  }
+  .title-gold {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0.25em;
+    color: var(--text-gold);
+    text-align: center;
+  }
+  .subtitle-gold {
+    color: var(--text-gold);
+    text-align: center;
+  }
+  .price-gold {
+    text-align: center;
+    text-transform: uppercase;
+    color: gray;
+    background-color: white;
+    padding: 1em 6em;
+    border-radius: 10px;
+    margin-top: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .price {
+    font-weight: 700;
+    font-size: 2em;
+    margin: 0;
+    color: var(--gold-primary);
+  }
 
-@layer components {
-  /* todo components */
+  .features-gold {
+    padding-left: 0;
+  }
+
+  .features-gold li {
+    color: var(--text-gold);
+    padding: 1em 0.5em;
+    border-radius: 10px;
+    background-color: #fef7d8;
+    margin-bottom: 0.5em;
+    list-style: none;
+    font-size: small;
+  }
+  .button-gold {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 6em;
+    background-color: var(--gold-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25em;
+    text-align: center;
+    font-weight: 600;
+  }
 }
