@@ -78,6 +78,9 @@ layer(base);
     color: var(--primary);
     font-weight: 600;
   }
+  .features {
+    padding-left: 1.5em
+  }
   .features li {
     margin-bottom: 0.5em;
     padding-left: 0.5em;
