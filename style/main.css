@@ -28,7 +28,6 @@ layer(base);
   .card {
     max-width: 21em;
     margin: 1rem; /* without scaling */
-    padding: 1em;
     border: 1px solid var(--border);
     border-radius: 0.5em;
   }
@@ -42,10 +41,11 @@ layer(base);
     display: flex;
     
   }
-  .card--marketer {
+  .card-marketer {
     background-color: white;
+    padding: 1em;
   }
-  .title {
+  .title-marketer {
     font-weight: 700;
     font-size: 2.5em;
     margin-bottom: 0.25em;
@@ -54,13 +54,13 @@ layer(base);
   b {
     color: var(--primary);
   }
-  .number {
+  .number-marketer {
     font-weight: 700;
     font-size: 2em;
     color: var(--primary);
   }
 
-  .button {
+  .button-marketer {
     display: inline-block;
     margin-top: 1em;
     padding: 1em 2em;
@@ -74,14 +74,14 @@ layer(base);
   .button:hover {
     background-color: var(--secondary);
   }
-  .link {
+  .link-marketer {
     color: var(--primary);
     font-weight: 600;
   }
-  .features {
+  .features-marketer {
     padding-left: 1.5em
   }
-  .features li {
+  .features-marketer li {
     margin-bottom: 0.5em;
     padding-left: 0.5em;
   }
@@ -91,11 +91,12 @@ layer(base);
   .cross {
     list-style-image: url("/images/cross.svg");
   }
-  .card--gold {
+  .card-gold {
     background-color: var(--gold-secondary);
     border-color: var(--gold-primary);
     border-width: 3px;
     justify-items: center;
+    padding: 1em;
   }
   .ad-gold {
     background-color: var(--gold-primary);
@@ -156,5 +157,64 @@ layer(base);
     border-radius: 0.25em;
     text-align: center;
     font-weight: 600;
+  }
+  .card-business {
+    background-color: white;
+    border: #0fb67f 3px solid;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .title-business {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0.25em;
+    color: #0fb67f;
+  }
+  .footer-business {
+    padding: 1em;
+  }
+  .footer-business p {
+    line-height: 1.5em;
+  }
+  .price-business {
+    background-color: #0fb67f;
+    color: white;
+    padding: 1em 6em;
+    margin-top:  2em;
+  }
+  .number-business {
+    font-weight: 700;
+    font-size: 3em;
+    margin: 0;
+    color: white;
+    justify-self: center;
+  }
+  .button-business {
+    display: inline-block;
+    background-color: #0fb67f;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 1em 7em;
+    font-weight: 600;
+  }
+  .card-creative {
+    background-color: #fce1f1;
+    padding: 1em;
+  }
+  .title-creative {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0.25em;
+    color: #e53b8b;
+  }
+  .card-creative p {
+    color: #931843;
+  }
+  .price-creative {
+    background-color: #e53b8b;
+    color: white;
+    padding: 1em 6em;
+    border-radius: 10px;
   }
 }
